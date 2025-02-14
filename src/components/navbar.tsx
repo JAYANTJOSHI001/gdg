@@ -15,6 +15,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
+import { signIn } from "next-auth/react"
 
 const features = [
   {
@@ -201,10 +202,10 @@ export function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="ml-auto flex items-center gap-4">
-          <Button variant="ghost" className="hidden md:flex">
+          <Button variant="ghost" className="hidden md:flex" onClick={() => signIn()}>
             Sign In
           </Button>
-          <Button className="bg-gradient-to-r from-purple-300 to-indigo-300 text-white hover:opacity-90 transition-opacity">
+          <Button className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity">
             Get Started
           </Button>
         </div>
