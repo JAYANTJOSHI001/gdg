@@ -126,6 +126,14 @@ const security = [
 ]
 
 export function Navbar() {
+  async function signUp(): Promise<void> {
+    try {
+      window.location.href = "/signup";
+    } catch (error) {
+      console.error("Sign-up failed:", error);
+    }
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 mx-auto">
@@ -205,7 +213,7 @@ export function Navbar() {
           <Button variant="ghost" className="hidden md:flex" onClick={() => signIn()}>
             Sign In
           </Button>
-          <Button className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity">
+          <Button className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity" onClick={() => signUp()}>
             Get Started
           </Button>
         </div>

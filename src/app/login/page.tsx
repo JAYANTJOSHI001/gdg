@@ -8,13 +8,10 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 
-const SignUp = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
     email: "",
     password: "",
-    confirmPassword: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,26 +32,11 @@ const SignUp = () => {
       </div>
       <div className="relative p-0.5 rounded-xl overflow-hidden">
         <div className="absolute inset-0 animate-gradient" />
-        <Card className="relative w-full max-w-md shadow-lg bg-white z-10">
+        <Card className="relative w-[350px] max-w-md shadow-lg bg-white z-10">
           <CardHeader>
             <p className="text-center text-gray-600">Get started with SWIFTER today!</p>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-2">
-              <Input
-                name="firstName"
-                placeholder="First Name"
-                value={formData.firstName}
-                onChange={handleChange}
-              />
-              <Input
-                name="lastName"
-                placeholder="Last Name"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
-            </div>
-
             <Input
               className="mt-2"
               name="email"
@@ -69,14 +51,6 @@ const SignUp = () => {
               placeholder="Enter your password"
               type="password"
               value={formData.password}
-              onChange={handleChange}
-            />
-            <Input
-              className="mt-2"
-              name="confirmPassword"
-              placeholder="Re-enter your password"
-              type="password"
-              value={formData.confirmPassword}
               onChange={handleChange}
             />
 
@@ -127,4 +101,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
