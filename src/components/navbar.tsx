@@ -20,25 +20,25 @@ import { signIn } from "next-auth/react"
 const features = [
   {
     title: "How It Works",
-    href: "#",
+    href: "/how-it-works",
     description: "Get detailed insights into your application's performance",
     icon: "📊",
   },
   {
     title: "Automation",
-    href: "#",
+    href: "/automation",
     description: "Automate your workflow with powerful tools",
     icon: "⚡",
   },
   {
     title: "Integration",
-    href: "#",
+    href: "/integration",
     description: "Connect with your favorite tools seamlessly",
     icon: "🔄",
   },
   {
     title: "Multi-Cloud & Scalability",
-    href: "#",
+    href: "/multi-cloud",
     description: "Tailor the platform to match your needs",
     icon: "🎨",
   },
@@ -47,25 +47,25 @@ const features = [
 const support = [
   {
     title: "FAQ Section",
-    href: "#",
+    href: "/faq",
     description: "Comprehensive guides and API references",
     icon: "📚",
   },
   {
     title: "Contact & Support",
-    href: "#",
+    href: "/contact",
     description: "Get help from our dedicated support team",
     icon: "💡",
   },
   {
     title: "Documentation & Guides",
-    href: "#",
+    href: "/docs",
     description: "Join our thriving developer community",
     icon: "👥",
   },
   {
     title: "Webinars & Community Events",
-    href: "#",
+    href: "/webinars",
     description: "Check our system status and uptime",
     icon: "🟢",
   },
@@ -74,25 +74,25 @@ const support = [
 const about = [
   {
     title: "Our Story",
-    href: "#",
+    href: "/about",
     description: "Learn about our journey and mission",
     icon: "📖",
   },
   {
     title: "Team",
-    href: "#",
+    href: "/team",
     description: "Meet the people behind Swifter",
     icon: "👋",
   },
   {
     title: "Careers",
-    href: "#",
+    href: "/careers",
     description: "Join us in building the future",
     icon: "💼",
   },
   {
     title: "Blog",
-    href: "#",
+    href: "/blog",
     description: "Read our latest news and updates",
     icon: "✍️",
   },
@@ -101,25 +101,25 @@ const about = [
 const security = [
   {
     title: "Security Features",
-    href: "#",
+    href: "/security",
     description: "Enterprise-grade security for your data",
     icon: "🔒",
   },
   {
     title: "Compliance",
-    href: "#",
+    href: "/compliance",
     description: "SOC 2 and GDPR compliant platform",
     icon: "✅",
   },
   {
     title: "Privacy",
-    href: "#",
+    href: "/privacy",
     description: "Learn about our privacy practices",
     icon: "🛡️",
   },
   {
     title: "Trust Center",
-    href: "#",
+    href: "/trust-center",
     description: "Explore our security measures",
     icon: "🏛️",
   },
